@@ -1,0 +1,51 @@
+ .imagebox {
+      cursor: pointer;
+      height: 230px;
+      position: relative;
+      overflow: hidden;
+      width: 330px;
+      text-align:center;
+      }
+      .imagebox .fadedbox {
+      background-color: #666666;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+      -webkit-transition: all 300ms ease-out;
+      -moz-transition: all 300ms ease-out;
+      -o-transition: all 300ms ease-out;
+      -ms-transition: all 300ms ease-out;
+      transition: all 300ms ease-out;
+      opacity: 0;
+      width: 330px;
+      height: 230px;
+      }
+      .imagebox:hover .fadedbox { opacity: 0.8; }
+      .imagebox .text {
+      -webkit-transition: all 300ms ease-out;
+      -moz-transition: all 300ms ease-out;
+      -o-transition: all 300ms ease-out;
+      -ms-transition: all 300ms ease-out;
+      transition: all 300ms ease-out;
+      transform: translateY(30px);
+      -webkit-transform: translateY(30px);
+      width: 360px;
+      height: 200px;
+      }
+      .imagebox .title {
+      font-size: 2.5em;
+      text-transform: uppercase;
+      opacity: 0;
+      transition-delay: 0.2s;
+      transition-duration: 0.3s;
+      width: 360px;
+      height: 200px;
+      padding-right: 30px;
+      }
+      .imagebox:hover .title,
+      .imagebox:focus .title {
+      opacity: 1;
+      transform: translateY(0px);
+      -webkit-transform: translateY(0px);
+      }
